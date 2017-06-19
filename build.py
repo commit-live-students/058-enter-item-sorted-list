@@ -1,4 +1,6 @@
 import bisect
 
 def solution(list_of_nums, num):
-    """Enter Code Here"""
+    sort_list = sorted(list_of_nums)
+    bisect.insort(sort_list,num)
+    return sort_list
